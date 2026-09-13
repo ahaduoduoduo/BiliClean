@@ -16,7 +16,7 @@
 | 功能 | 使用体验 |
 | --- | --- |
 | 赞助片段跳过 | 根据小电视空降助手的社区标注自动跳过赞助片段，可调整跳过提前量、设置不重复跳过 |
-| 完整视频下载 | 下载当前分 P 的完整视频，自动选择账号可获取的最高普通画质，音视频无损合并后保存到照片 |
+| 完整视频下载 | 下载当前正在播放的完整视频，自动选择账号可获取的最高画质，音视频无损合并后保存到照片 |
 | 广告过滤 | 移除开屏、信息流和播放器广告，按需过滤带货内容、相关推荐广告及片尾推荐 |
 | 关键词屏蔽 | 按普通关键词或正则表达式过滤内容，每条规则可分别用于推荐、动态和评论 |
 | 播放速度 | 设置默认倍速，在常见倍速列表中增加 3 倍速 |
@@ -29,19 +29,15 @@
 ### 下载完整视频
 
 1. 在视频播放页打开分享面板。
-2. 点击 **下载视频**。原来的“下载分享”会被替换；面板没有该入口时，插件会在第三个位置添加按钮。
-3. 面板关闭后，顶部半透明胶囊显示下载、合并和保存进度。可以返回列表或切换视频继续观看。
-4. 保存成功后显示实际保存位置和完成动画，随后自动隐藏。
+2. 点击第三个位置的 **下载分享** 或 **下载视频** 按钮
+3. 顶部显示下载、合并和保存进度。可以返回列表或切换其他视频
 
-下载选择普通 SDR 视频，遇到 HDR 或杜比视界时使用接口提供的普通画质。音视频合并不重新编码，保留完整时长。
-
-有可用相册权限时，视频归入 **BiliBili** 相册；只有“仅添加”权限时，直接保存到系统照片库。保存不要求完整照片访问权限。iOS 15 及以上的有限访问模式支持操作 App 自己创建的相册。
-
-一次下载一个视频，胶囊上的关闭按钮可以取消任务。视频保存失败后，点击胶囊即可重试保存，无需重新下载。任务支持 App 内切换页面；退出进程后不保留任务。
+暂不支持 HDR 或杜比视界
+需有相册写入权限
 
 ### 跳过赞助与调整播放
 
-在 **BiliClean → 播放** 中开启赞助跳过，设置提前量和默认倍速。片段数据来自 [小电视空降助手](https://bsbsb.top/) 的社区标注。
+在 **BiliClean → 播放** 中开启赞助跳过，可设置跳过提前量。片段数据来自 [小电视空降助手](https://bsbsb.top/) 的社区标注。
 
 进入 **CDN 加速** 页面运行测速，选择节点或拖动调整顺序。这里的节点设置用于播放；完整视频下载使用接口返回的原始主备地址。
 
@@ -71,14 +67,11 @@ packages/com.imlr.bilibilisp_1.0.28_iphoneos-arm.deb
 
 ## 鸣谢
 
-- [TouchFriend / BiliBiliTweak](https://github.com/TouchFriend/BiliBiliTweak)：广告过滤、设置入口及播放功能的代码参考，原项目采用 MIT 许可证，作者版权声明保留在 [LICENSE](LICENSE) 中。
+- [TouchFriend / BiliBiliTweak](https://github.com/TouchFriend/BiliBiliTweak)：广告过滤、设置入口及播放功能的代码参考。
 - [小电视空降助手](https://bsbsb.top/)及其社区贡献者：提供 B站赞助片段数据和 API。
-- [bilibili-api-collect](https://github.com/bilibili-plugins/bilibili-api-collect)：提供播放接口、protobuf 字段和音视频流结构资料。
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp)：下载功能调研时参考了 B站提取器对 DASH 音视频和画质的处理。
-- [Theos](https://github.com/theos/theos)、[Cydia Substrate](https://www.cydiasubstrate.com/) 和 [Frida](https://frida.re/)：提供插件构建、运行时 Hook 与真机调试工具。
 
 ## 项目信息
 
 由 **ahaduoduoduo** 维护，主要代码由 AI 辅助编写。
 
-采用 [MIT 许可证](LICENSE)。欢迎通过 Issue 反馈使用体验，或通过 [Buy Me a Coffee](https://www.buymeacoffee.com/ahaduoduoduo) 支持维护。
+采用 [MIT 许可证](LICENSE)。欢迎通过 Issue 反馈使用体验。
