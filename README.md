@@ -65,6 +65,12 @@ packages/com.imlr.bilibilisp_1.0.28_iphoneos-arm.deb
 
 维护者在 GitHub 发布与 `control` 版本一致的 Release（例如 `v1.0.28`）后，发布工作流会自动构建并上传 **dylib 和 SHA-256 校验文件**。
 
+## 免责声明
+
+- 本项目旨在用于 iOS 逆向工程学习与技术研究，与哔哩哔哩官方无关联。
+- 使用时请遵守适用法律法规及相关平台规则，尊重视频和其他内容的著作权，不得用于侵权或其他违法活动。
+- 如认为项目中的内容侵犯了你的合法权益，请通过 [Issue](https://github.com/ahaduoduoduo/BiliClean/issues) 联系维护者并提供相关说明，核实后将及时处理。
+
 ## 鸣谢
 
 - [TouchFriend / BiliBiliTweak](https://github.com/TouchFriend/BiliBiliTweak)：广告过滤、设置入口及播放功能的代码参考。
