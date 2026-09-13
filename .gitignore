@@ -1,0 +1,22 @@
+# Build products
+.theos/
+.theos-toolchain/
+packages/
+dist/
+*.dylib
+*.deb
+*.ipa
+*.dSYM/
+
+# Local workspace
+.DS_Store
+.vscode/
+.yoyo/
+
+# Private development notes, device experiments, and reference checkout
+docs/
+DETAILS.md
+TODO.md
+tools/
+tests/
+BiliBiliTweak-main/
